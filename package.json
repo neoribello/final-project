@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "heroku-postbuild": "npm run build --prefix react-front-end",
+    "install": "npm --prefix express-back-end install backend && npm --prefix react-front-end install react-front-end",
+    "dev:backend": "npm install --prefix backend start",
+    "dev:frontend": "npm install --prefix frontend start",
+    "sequelize": "npm run --prefix backend sequelize",
+    "sequelize-cli": "npm run --prefix backend sequelize-cli",
+    "start": "npm start --prefix express-back-end"
+  },"nodemon": "^1.19.4"
+}
